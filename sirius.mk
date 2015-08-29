@@ -21,4 +21,7 @@ PRODUCT_MODEL := Xperia Z2 (B2G)
 GAIA_DEV_PIXELS_PER_PX := 2.25
 BOOTANIMATION_ASSET_SIZE := 1080p
 
+PRODUCT_COPY_FILES += \
+    device/sony/sirius/bootrec-device:root/sbin/bootrec-device
+
 $(call inherit-product-if-exists, vendor/sony/sirius-blobs/sirius-vendor-blobs.mk)
